@@ -1,0 +1,56 @@
+.frame-parent{
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.project-group {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4px;
+    text-align: left;
+    font-size: 12px;
+}
+
+.start-group {
+    flex: 1;
+    align-items: flex-start;
+}
+
+.end-group {
+    flex: 1;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.phase-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.phase {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.project-title {
+    font-size: 14px; 
+    margin: 0;
+}
+
+.project-date,
+.phase-date {
+    font-size: 18px;
+    font-weight: 600;
+    color: #E4B271;
+    margin: 0;
+}
+
+.phase-title {
+    font-weight: 600;
+    margin: 0;
+}
