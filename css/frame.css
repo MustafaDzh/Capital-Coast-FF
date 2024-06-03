@@ -1,31 +1,41 @@
-.frame-parent{
+.frame-parent {
     flex-direction: column;
     margin: 0 auto;
 }
 
 .project-group {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 4px;
-    text-align: left;
+}
+
+.project-group p {
+    color: #FFF;
+    font-family: Montserrat;
     font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.project-group h3 {
+    color: #E4B271;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
 }
 
 .start-group {
     flex: 1;
-    align-items: flex-start;
 }
 
 .end-group {
     flex: 1;
-    align-items: flex-end;
     text-align: right;
 }
 
 .phase-group {
     display: flex;
-    justify-content: space-between;
     gap: 24px;
 }
 
@@ -37,20 +47,40 @@
     gap: 12px;
 }
 
-.project-title {
-    font-size: 14px; 
-    margin: 0;
+.phase p {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
 }
 
-.project-date,
-.phase-date {
-    font-size: 18px;
-    font-weight: 600;
-    color: #E4B271;
-    margin: 0;
+.phase h3 {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
 }
 
-.phase-title {
-    font-weight: 600;
-    margin: 0;
+.loading{
+    height: 40px;
+}
+
+.loading-container {
+    display: flex;
+    height: 12px;
+    background: linear-gradient(to right, #68C5F9 0%, #68C5F9 60%, #485265 60%, #485265 100%);
+}
+
+.loading-line {
+    width: 1px; 
+    height: 40px;
+    background-color: #fff; 
+    margin: -15px auto 0;
+    position: relative;
 }
