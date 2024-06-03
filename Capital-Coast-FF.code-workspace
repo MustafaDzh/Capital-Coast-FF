@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "Capital-Coast-FF",
+			"path": "."
+		},
+		{
+			"name": "fonts",
+			"path": "../HTML-CSS-Practice/Sushi/Fonts/fa/fonts"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5502,
+		"liveServer.settings.multiRootWorkspaceName": "Capital-Coast-FF"
+	}
+}
