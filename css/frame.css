@@ -1,6 +1,7 @@
 .frame-parent {
     flex-direction: column;
     margin: 0 auto;
+
 }
 
 .project-group {
@@ -67,7 +68,7 @@
     line-height: 21px;
 }
 
-.loading{
+.loading {
     height: 40px;
 }
 
@@ -78,9 +79,69 @@
 }
 
 .loading-line {
-    width: 1px; 
+    width: 1px;
     height: 40px;
-    background-color: #fff; 
+    background-color: #fff;
     margin: -15px auto 0;
     position: relative;
+}
+
+@media (max-width: 768px) {
+    .project-group {
+        text-align: center;
+    }
+
+    .end-group {
+        text-align: center;
+    }
+
+    .phase-group {
+        gap: 20px;
+    }
+
+    .phase {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-group {
+        text-align: center;
+    }
+
+    .start-group,
+    .end-group {
+        text-align: center;
+    }
+
+    .phase-group {
+        gap: 15px;
+    }
+
+    .phase p {
+        font-size: 14px;
+    }
+
+    .phase h3 {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 769px) {
+    .frame-parent {
+        max-width: 1200px;
+    }
+
+    .project-group {
+        justify-content: space-between;
+    }
+
+    .phase-group {
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .phase {
+        flex: 1;
+    }
 }

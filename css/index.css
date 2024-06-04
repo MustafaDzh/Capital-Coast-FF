@@ -1,13 +1,19 @@
 @import url('./css-reset.css'); 
 @import url('./font-awesome.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @import url('./header.css');
 @import url('./frame.css');
+@import url('./stages.css');
+@import url('./news.css');
+@import url('./footer.css');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     flex-wrap: wrap;
+    font-family: Montserrat;
 }
 
 body{
@@ -16,13 +22,19 @@ body{
 }
 
 .container{
-    max-width: 1440px;
     display: flex;
     flex-direction: row;
 }
 
 .section{
-    max-width: 1320px;
+    max-width: 1920px;
+    width: 92%;
     display: flex;
     padding-top: 150px;
+}
+
+@media screen and (max-width:768px) {
+    .section{
+        padding-top: 100px;
+    }
 }

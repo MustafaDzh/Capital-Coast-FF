@@ -1,0 +1,115 @@
+.stages {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    width: 100%;
+}
+
+.stages h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 14px;
+    text-transform: uppercase;
+    margin-bottom: 128px;
+}
+
+.rectangle-parent {
+    display: flex;
+    background: white;
+    width: 100%;
+    margin-bottom: 120px;
+    position: relative;
+    box-sizing: border-box;
+    overflow: visible; 
+}
+
+.frame-item-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 50%; 
+    justify-content: space-between;
+    position: relative;
+    margin-top: -32px; 
+    margin-bottom: -32px; 
+}
+
+.frame-item-images img {
+    width: calc(50% - 3px);
+    object-fit: cover;
+}
+
+.frame-item {
+    display: flex;
+    width: 50%; 
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 56px;
+}
+
+.frame-item-text {
+    width: 100%;
+}
+
+.frame-item-text h3 {
+    color: #000;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.frame-item-text p {
+    color: #000;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.frame-item-text p span {
+    color: #9C7848;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+@media (max-width: 768px) {
+    .stages h2{
+        margin-bottom: 80px;
+    }
+
+    .rectangle-parent {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    
+    .frame-item-images,
+    .frame-item {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .frame-item {
+        margin-top: 20px;
+    }
+    
+    .frame-item-images {
+        margin-top: -8px;
+        margin-bottom: -8px; 
+    }
+    
+    .frame-item-images img {
+        width: calc(50% - 5px); 
+    }
+}
