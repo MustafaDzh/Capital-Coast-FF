@@ -1,9 +1,19 @@
-.footer {
+.footer-section {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+.footer-content {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.30);
+}
+
+.inner-footer {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
     width: 75%;
-    padding-top: 150px;
+    margin: 0 auto;
 }
 
 .left-footer {
@@ -159,10 +169,15 @@
 }
 
 .down-footer {
+    width: 100%;
+    padding: 19px 0;
+}
+
+.inner-down-footer {
     display: flex;
     justify-content: space-between;
-    padding: 19px 0;
-    width: 100%;
+    width: 75%;
+    margin: 0 auto;
 }
 
 .down-footer p {

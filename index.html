@@ -169,85 +169,87 @@
         <button class="btn">Вижте още</button>
     </section>
 
-    <footer class="footer">
-        <div class="left-footer">
-            <img src="./images/Logo.svg" alt="Logo">
-            <div class="left-footer-contacts">
-                <h3>Контакти</h3>
-                <div class="left-footer-contact-info">
-                    <div class="contact-info-item-left">
-                        <p>мейл</p>
-                        <p>телефон</p>
-                        <p>адрес</p>
-                        <p>работно време</p>
+    <footer class="footer-section">
+        <div class="footer-content">
+            <div class="inner-footer">
+                <div class="left-footer">
+                    <img src="./images/Logo.svg" alt="Logo">
+                    <div class="left-footer-contacts">
+                        <h3>Контакти</h3>
+                        <div class="left-footer-contact-info">
+                            <div class="contact-info-item-left">
+                                <p>мейл</p>
+                                <p>телефон</p>
+                                <p>адрес</p>
+                                <p>работно време</p>
+                            </div>
+                            <div class="contact-info-item-right">
+                                <p>hi@capitolcoast.bg</p>
+                                <p>+359884 008 008</p>
+                                <p>+359887 479 935</p>
+                                <p>кв. Крайморие, Местност Кафка</p>
+                                <p>08:30-17:30</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="contact-info-item-right">
-                        <p>hi@capitolcoast.bg</p>
-                        <p>+359884 008 008</p>
-                        <p>+359887 479 935</p>
-                        <p>кв. Крайморие, Местност Кафка</p>
-                        <p>08:30-17:30</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="./images/facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img src="./images/youtube.svg" alt="YouTube"></a>
+                        <a href="#"><img src="./images/instagram.svg" alt="Instagram"></a>
                     </div>
+                    <nav class="left-footer-nav">
+                        <h3>Навигация</h3>
+                        <ul>
+                            <li>За проекта</li>
+                            <li>Къщи</li>
+                            <li>Етапи на строителство</li>
+                            <li>Галерия</li>
+                            <li>Контакти</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="right-footer">
+                    <h2>Направете запитване</h2>
+                    <form action="/submit_form.php" method="post" enctype="multipart/form-data" autocomplete="on" novalidate>
+                        <label for="name">Име и фамилия <span>*</span></label>
+                        <input type="text" id="name" name="name" placeholder="Име и фамилия" required minlength="2"
+                            maxlength="50" pattern="[A-Za-zА]+" title="Моля, въведете валидно име и фамилия">
+
+                        <label for="phone">Телефон <span>*</span></label>
+                        <input type="tel" id="phone" name="phone" placeholder="Телефон" required minlength="10" maxlength="15"
+                            pattern="[0-9]+" title="Моля, въведете валиден телефонен номер">
+
+                        <label for="email">Имейл <span>*</span></label>
+                        <input type="email" id="email" name="email" placeholder="Емайл" required maxlength="100"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Моля, въведете валиден имейл адрес">
+
+                        <label for="message">Съобщение <span>*</span></label>
+                        <textarea id="message" name="message" rows="4" cols="50" placeholder="Съобщение*" required
+                            minlength="10" maxlength="500"
+                            title="Моля, въведете съобщение (минимум 10 символа, максимум 500 символа)"></textarea>
+
+                        <div>
+                            <input type="checkbox" id="agree_terms" name="agree_terms" required>
+                            <label id="terms" for="agree_terms">Съгласяване с <a href="/terms_and_conditions">Общите условия</a>
+                                и <a href="/Policy">Политика за поверителност</a> на личните данни</label>
+                        </div>
+
+                        <button type="submit" class="btn sent" id="submitBtn">Изпращане</button>
+                    </form>
                 </div>
             </div>
-            <div class="social-icons">
-                <a href="#"><img src="./images/facebook.svg" alt="Facebook"></a>
-                <a href="#"><img src="./images/youtube.svg" alt="YouTube"></a>
-                <a href="#"><img src="./images/instagram.svg" alt="Instagram"></a>
-            </div>
-            <nav class="left-footer-nav">
-                <h3>Навигация</h3>
-                <ul>
-                    <li>За проекта</li>
-                    <li>Къщи</li>
-                    <li>Етапи на строителство</li>
-                    <li>Галерия</li>
-                    <li>Контакти</li>
-                </ul>
-            </nav>
         </div>
-
-        <div class="right-footer">
-            <h2>Направете запитване</h2>
-            <form action="/submit_form.php" method="post" enctype="multipart/form-data" autocomplete="on" novalidate>
-                <label for="name">Име и фамилия <span>*</span></label>
-                <input type="text" id="name" name="name" placeholder="Име и фамилия" required minlength="2"
-                    maxlength="50" pattern="[A-Za-zА]+" title="Моля, въведете валидно име и фамилия">
-
-                <label for="phone">Телефон <span>*</span></label>
-                <input type="tel" id="phone" name="phone" placeholder="Телефон" required minlength="10" maxlength="15"
-                    pattern="[0-9]+" title="Моля, въведете валиден телефонен номер">
-
-                <label for="email">Имейл <span>*</span></label>
-                <input type="email" id="email" name="email" placeholder="Емайл" required maxlength="100"
-                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Моля, въведете валиден имейл адрес">
-
-                <label for="message">Съобщение <span>*</span></label>
-                <textarea id="message" name="message" rows="4" cols="50" placeholder="Съобщение*" required
-                    minlength="10" maxlength="500"
-                    title="Моля, въведете съобщение (минимум 10 символа, максимум 500 символа)"></textarea>
-
-                <div>
-                    <input type="checkbox" id="agree_terms" name="agree_terms" required>
-                    <label id="terms" for="agree_terms">Съгласяване с <a href="/terms_and_conditions">Общите условия</a>
-                        и <a href="/Policy">Политика за поверителност</a> на личните данни</label>
-                </div>
-
-                <button type="submit" class="btn sent" id="submitBtn">Изпращане</button>
-            </form>
-
-        </div>
-
         <div class="down-footer">
-            <p>© 2024 prodesign</p>
-            <ul>
-                <li>Условия за ползване</li>
-                <li>Политика за личните данни</li>
-                <li>Политика за бисквитките</li>
-            </ul>
+            <div class="inner-down-footer">
+                <p>© 2024 prodesign</p>
+                <ul>
+                    <li>Условия за ползване</li>
+                    <li>Политика за личните данни</li>
+                    <li>Политика за бисквитките</li>
+                </ul>
+            </div>
         </div>
     </footer>
-    <div class="footer-line"></div>
 
 </body>
 
