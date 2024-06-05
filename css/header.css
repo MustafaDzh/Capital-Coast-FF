@@ -3,18 +3,38 @@ header {
 }
 
 .container {
+    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 16px 24px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.00) 0%, rgba(11, 25, 49, 0.48) 67.5%, rgba(0, 0, 9, 0.80) 100%);
+    background-blend-mode: multiply;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+}
+
+.phone-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 
 .phone img {
     margin-right: 10px;
+    position: relative;
+    width: 14.22px;
+    height: 14.22px;
 }
 
 .phone p {
+    margin: 0;
     font-family: Hauora;
     letter-spacing: 0.588px;
+    color: #E4B271;
+    font-size: 14.694px;
 }
 
 nav {
@@ -32,12 +52,17 @@ nav ul {
     justify-content: space-between;
 }
 
+nav ul li {
+    padding: 12px 10px; 
+}
+
 nav ul li a {
     font-size: 12px;
     font-weight: 500;
     line-height: 14px;
     text-transform: uppercase;
     text-decoration: none;
+    display: block;
 }
 
 .banner-bg {
@@ -69,9 +94,7 @@ nav ul li a {
     color: #E4B271;
 }
 
-
-
-/*FOR MOBILE BELOW*/
+/* FOR MOBILE BELOW */
 
 .nav-toggle {
     display: none;
