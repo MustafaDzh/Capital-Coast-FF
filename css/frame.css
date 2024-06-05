@@ -1,7 +1,5 @@
 .frame-parent {
     flex-direction: column;
-    margin: 0 auto;
-
 }
 
 .project-group {
@@ -9,20 +7,12 @@
 }
 
 .project-group p {
-    color: #FFF;
-    font-family: Montserrat;
     font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 18px;
 }
 
 .project-group h3 {
-    color: #E4B271;
-    font-family: Montserrat;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
     line-height: 27px;
 }
 
@@ -37,35 +27,23 @@
 
 .phase-group {
     display: flex;
-    gap: 24px;
 }
 
 .phase {
-    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 12px;
 }
 
-.phase p {
-    color: #FFF;
+.phase h2 {
     text-align: center;
-    font-family: Montserrat;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
     line-height: 24px;
 }
 
-.phase h3 {
-    color: #FFF;
+.phase p {
     text-align: center;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 21px;
 }
 
 .loading {
@@ -83,8 +61,9 @@
     height: 40px;
     background-color: #fff;
     margin: -15px auto 0;
-    position: relative;
 }
+
+/*FOR MOBILE BELOW*/
 
 @media (max-width: 768px) {
     .project-group {
@@ -96,7 +75,9 @@
     }
 
     .phase-group {
+        flex-direction: row; 
         gap: 20px;
+        flex-wrap: nowrap; 
     }
 
     .phase {
@@ -115,7 +96,9 @@
     }
 
     .phase-group {
+        flex-direction: row; /* Maintain row direction on smaller mobile screens */
         gap: 15px;
+        flex-wrap: nowrap; /* Prevent wrapping */
     }
 
     .phase p {

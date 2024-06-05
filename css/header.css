@@ -1,42 +1,25 @@
 header {
-    background: linear-gradient(180deg, rgba(12, 17, 54, 0.00) 61.4%, rgba(12, 17, 54, 0.50) 93.88%), url('../images/hero.jpeg') lightgray 50% / cover no-repeat;
-    color: white;
-    text-align: center;
+    background: linear-gradient(180deg, rgba(12, 17, 54, 0.00) 61.4%, rgba(12, 17, 54, 0.50) 93.88%), url('../images/hero.png') lightgray 50% / cover no-repeat;
 }
 
 .container {
-    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 16px 24px;
-    width: 100%;
-}
-
-.logo-wrapper img {
-    width: 131.467px;
-    height: auto;
-    flex-shrink: 0;
 }
 
 .phone img {
-    width: 20px;
-    height: auto;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .phone p {
-    color: #E4B271;
     font-family: Hauora;
-    font-size: 14.694px;
-    font-weight: 600;
-    line-height: 200%;
     letter-spacing: 0.588px;
 }
 
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     width: 60%;
 }
 
@@ -50,8 +33,6 @@ nav ul {
 }
 
 nav ul li a {
-    color: #FFF;
-    font-family: Montserrat;
     font-size: 12px;
     font-weight: 500;
     line-height: 14px;
@@ -59,40 +40,14 @@ nav ul li a {
     text-decoration: none;
 }
 
-.btn {
-    color: #0B1931;
-    font-family: Montserrat;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 14px;
-    text-transform: uppercase;
-    height: 40px;
-    padding: 12px 16px;
-    cursor: pointer;
-    background-color: #E4B271;
-    border: none;
-    display: inline-block;
-}
-
-.btn:hover {
-    transition: 0.3s ease-in-out;
-    background-color: #f3ab4c;
-}
-
 .banner-bg {
     position: relative;
     width: 70%;
-    text-align: left;
-    padding-top: 30px;
-    background-position: center top;
-    min-height: 550px;
+    min-height: 75vh;
 }
 
 .banner-bg h3,
 .banner-bg h1 {
-    color: #FFF;
-    font-family: Montserrat;
-    font-style: normal;
     text-transform: uppercase;
     position: absolute;
     left: 15%;
@@ -100,8 +55,6 @@ nav ul li a {
 
 .banner-bg h3 {
     font-size: 28px;
-    font-weight: 500;
-    line-height: 14px;
     top: 70%;
 }
 
@@ -109,13 +62,16 @@ nav ul li a {
     font-size: 72px;
     font-weight: 400;
     line-height: 100%;
-    top: 75%;
-    margin-bottom: -50px;
+    top: 79%;
 }
 
 .banner-bg h1 span {
     color: #E4B271;
 }
+
+
+
+/*FOR MOBILE BELOW*/
 
 .nav-toggle {
     display: none;
@@ -215,7 +171,7 @@ nav ul li a {
     .banner-bg {
         width: 90%;
         padding: 20px;
-        min-height: 400px;
+        min-height: 40vh;
         text-align: center;
     }
 
@@ -262,6 +218,6 @@ nav ul li a {
     }
 
     .banner-bg {
-        min-height: 300px;
+        min-height: 30vh;
     }
 }
