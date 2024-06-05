@@ -1,4 +1,5 @@
 .stages {
+    display: flex;
     flex-direction: column;
 }
 
@@ -12,6 +13,10 @@
     display: flex;
     margin-top: 128px;
     background: white;
+}
+
+.rectangle-parent:nth-child(odd) {
+    flex-direction: row-reverse;
 }
 
 .frame-item-images {
