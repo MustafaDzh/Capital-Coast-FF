@@ -1,130 +1,67 @@
-.frame-parent {
-    flex-direction: column;
+#frame-parent{
+    margin-top: 70px;
 }
 
-.project-group {
-    display: flex;
-}
-
-.project-group p {
-    font-size: 12px;
-    line-height: 18px;
-}
-
-.project-group h3 {
-    font-size: 18px;
-    line-height: 27px;
-}
-
-.start-group {
+.first-phase,
+.second-phase,
+.third-phase,
+.fourth-phase {
     flex: 1;
-}
-
-.end-group {
-    flex: 1;
-    text-align: right;
-}
-
-.phase-group {
-    display: flex;
-}
-
-.phase {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 12px;
+    position: relative; 
 }
 
-.phase h2 {
-    text-align: center;
-    font-size: 16px;
-    line-height: 24px;
+.first-phase-bar,
+.second-phase-bar,
+.third-phase-bar,
+.fourth-phase-bar {
+    height: 10px; 
+    position: relative;
+    background-color: #485265; 
+    margin-bottom: 40px;
 }
 
-.phase p {
-    text-align: center;
+.first-phase-bar::before,
+.second-phase-bar::before,
+.third-phase-bar::before,
+.fourth-phase-bar::before {
+    content: "";
+    display: block;
+    height: 100%;
+    background-color: #68C5F9; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: attr(data-progress); 
 }
 
-.loading {
+.first-phase::after,
+.second-phase::after,
+.third-phase::after{
+    content: '';
+    position: absolute;
+    top: -15px; 
+    right: 0;
     height: 40px;
-}
-
-.loading-container {
-    display: flex;
-    height: 12px;
-    background: linear-gradient(to right, #68C5F9 0%, #68C5F9 60%, #485265 60%, #485265 100%);
-}
-
-.loading-line {
     width: 1px;
-    height: 40px;
     background-color: #fff;
-    margin: -15px auto 0;
 }
 
-/*FOR MOBILE BELOW*/
-
-@media (max-width: 768px) {
-    .project-group {
-        text-align: center;
-    }
-
-    .end-group {
-        text-align: center;
-    }
-
-    .phase-group {
-        flex-direction: row; 
-        gap: 20px;
-        flex-wrap: nowrap; 
-    }
-
-    .phase {
-        width: 100%;
-    }
+.first-phase-info,
+.second-phase-info,
+.third-phase-info,
+.fourth-phase-info {
+    text-align: center;
+    padding: 10px; 
 }
 
-@media (max-width: 480px) {
-    .project-group {
-        text-align: center;
-    }
-
-    .start-group,
-    .end-group {
-        text-align: center;
-    }
-
-    .phase-group {
-        flex-direction: row; /* Maintain row direction on smaller mobile screens */
-        gap: 15px;
-        flex-wrap: nowrap; /* Prevent wrapping */
-    }
-
-    .phase p {
-        font-size: 14px;
-    }
-
-    .phase h3 {
-        font-size: 12px;
-    }
+.phase-title {
+    font-size: 16px; 
+    font-weight: bold;
+    margin-bottom: 12px;
 }
 
-@media (min-width: 769px) {
-    .frame-parent {
-        max-width: 1200px;
-    }
-
-    .project-group {
-        justify-content: space-between;
-    }
-
-    .phase-group {
-        flex-wrap: wrap;
-        gap: 24px;
-    }
-
-    .phase {
-        flex: 1;
-    }
+.phase-date {
+    font-size: 14px; 
 }
