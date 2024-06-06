@@ -13,7 +13,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" />
     <link rel="icon" type="image/png" href="./images/Logo.svg">
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -90,36 +90,42 @@
                 <p class="project-title">КРАЙ НА ПРОЕКТА</p>
                 <h3 class="project-date specColor">Април 2025</h3>
             </div>
+            <div class="mobile-nav-arrow">
+                <img src="./images/arrow.svg" alt="">
+            </div>
         </div>
-        <div class="phases">
-            <div class="phase">
-                <div class="phase-bar first-phase-bar" data-progress="100%"></div>
-                <div class="phase-info">
-                    <h2 class="phase-title">Фаза 1</h2>
-                    <p class="phase-date">Акт 16 - декември 2023 г.</p>
+        <div class="phases swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide phase">
+                    <div class="phase-bar first-phase-bar" data-progress="100%"></div>
+                    <div class="phase-info">
+                        <h2 class="phase-title">Фаза 1</h2>
+                        <p class="phase-date">Акт 16 - декември 2023 г.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide phase">
+                    <div class="phase-bar second-phase-bar" data-progress="100%"></div>
+                    <div class="phase-info">
+                        <h2 class="phase-title">Фаза 2</h2>
+                        <p class="phase-date">Акт 16 - юни 2025 г.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide phase">
+                    <div class="phase-bar third-phase-bar" data-progress="70%"></div>
+                    <div class="phase-info">
+                        <h2 class="phase-title">Фаза 3</h2>
+                        <p class="phase-date">Акт 16 - декември 2025 г.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide phase">
+                    <div class="phase-bar fourth-phase-bar" data-progress="0%"></div>
+                    <div class="phase-info">
+                        <h2 class="phase-title">Фаза 4</h2>
+                        <p class="phase-date">юни 2026</p>
+                    </div>
                 </div>
             </div>
-            <div class="phase">
-                <div class="phase-bar second-phase-bar" data-progress="100%"></div>
-                <div class="phase-info">
-                    <h2 class="phase-title">Фаза 2</h2>
-                    <p class="phase-date">Акт 16 - юни 2025 г.</p>
-                </div>
-            </div>
-            <div class="phase">
-                <div class="phase-bar third-phase-bar" data-progress="70%"></div>
-                <div class="phase-info">
-                    <h2 class="phase-title">Фаза 3</h2>
-                    <p class="phase-date">Акт 16 - декември 2025 г.</p>
-                </div>
-            </div>
-            <div class="phase">
-                <div class="phase-bar fourth-phase-bar" data-progress="0%"></div>
-                <div class="phase-info">
-                    <h2 class="phase-title">Фаза 4</h2>
-                    <p class="phase-date">юни 2026</p>
-                </div>
-            </div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
     
@@ -293,6 +299,7 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script> 
 </body>
 

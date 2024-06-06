@@ -80,3 +80,25 @@
 .phase-date {
     font-size: 14px;
 }
+
+.mobile-nav-arrow {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .end-group {
+        display: none;
+    }
+
+    .mobile-nav-arrow {
+        display: flex;
+    }
+
+    .phases .swiper-slide {
+        display: none;
+    }
+
+    .phases .swiper-slide:first-child {
+        display: block; 
+    }
+}

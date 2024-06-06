@@ -19,4 +19,25 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+//swiper for phases
+document.addEventListener('DOMContentLoaded', function () {
+    var swiperContainer = document.querySelector('.phases');
+    var mobileNavArrow = document.querySelector('.mobile-nav-arrow');
+
+    if (swiperContainer && mobileNavArrow) {
+        var swiper = new Swiper(swiperContainer, {
+            direction: 'horizontal',
+            loop: false,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+
+        mobileNavArrow.addEventListener('click', function () {
+            console.log('Clicked on mobile navigation arrow');
+            swiper.slideNext(); 
+        });
+    } 
+});
+
 
