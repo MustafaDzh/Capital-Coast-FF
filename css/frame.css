@@ -1,67 +1,82 @@
-#frame-parent{
+#frame-parent {
     margin-top: 70px;
-}
-
-.first-phase,
-.second-phase,
-.third-phase,
-.fourth-phase {
-    flex: 1;
     display: flex;
     flex-direction: column;
-    position: relative; 
+    align-items: center;
 }
 
-.first-phase-bar,
-.second-phase-bar,
-.third-phase-bar,
-.fourth-phase-bar {
-    height: 10px; 
+.project-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.start-group,
+.end-group {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.end-group {
+    text-align: right;
+}
+
+.start-group h3,
+.end-group h3 {
+    margin-top: 12px;
+}
+
+.phases {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.phase {
+    flex: 1;
     position: relative;
-    background-color: #485265; 
+}
+
+.phase-bar {
+    height: 10px;
     margin-bottom: 40px;
+    background-color: #485265;
 }
 
-.first-phase-bar::before,
-.second-phase-bar::before,
-.third-phase-bar::before,
-.fourth-phase-bar::before {
-    content: "";
-    display: block;
-    height: 100%;
-    background-color: #68C5F9; 
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: attr(data-progress); 
-}
-
-.first-phase::after,
-.second-phase::after,
-.third-phase::after{
+.phase-bar::before {
     content: '';
     position: absolute;
-    top: -15px; 
+    top: 0;
+    left: var(--progress);
+    height: 100%;
+    width: calc(100% - var(--progress));
+    background-color: #485265;
+    height: 10px;
+}
+
+.phase:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: -15px;
     right: 0;
     height: 40px;
     width: 1px;
     background-color: #fff;
 }
 
-.first-phase-info,
-.second-phase-info,
-.third-phase-info,
-.fourth-phase-info {
+.phase-info {
     text-align: center;
-    padding: 10px; 
+    padding: 10px;
 }
 
 .phase-title {
-    font-size: 16px; 
+    font-size: 16px;
     font-weight: bold;
     margin-bottom: 12px;
 }
 
 .phase-date {
-    font-size: 14px; 
+    font-size: 14px;
 }
