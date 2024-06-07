@@ -135,6 +135,7 @@
     -moz-appearance: none;
     width: 20px;
     height: 20px;
+    background-color: transparent; /* Default background color */
     border: 1px solid #FFF;
     border-radius: 3px;
     position: relative;
@@ -142,14 +143,36 @@
     top: 5px;
 }
 
-.right-footer input[type="checkbox"]:checked::before {
-    content: '\2713';
-    position: absolute;
-    top: 41%;
-    left: 75%;
-    transform: translate(-50%, -50%);
-    width: 100%;
+.right-footer input[type="checkbox"]:checked {
+    background-color: #E4B271; /* Background color when checked */
 }
+
+.right-footer input[type="checkbox"]::before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.right-footer input[type="checkbox"]:checked::after {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 17px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none"><rect width="16" height="16" transform="translate(0 0.5)" fill="%23E4B271"/><path d="M5.70457 11.2734L3.21934 8.78986C2.94002 8.51074 2.48881 8.51074 2.20949 8.78986C1.93017 9.06899 1.93017 9.51988 2.20949 9.799L5.20322 12.7907C5.48254 13.0698 5.93375 13.0698 6.21307 12.7907L13.7905 5.21849C14.0698 4.93936 14.0698 4.48847 13.7905 4.20934C13.5112 3.93022 13.06 3.93022 12.7807 4.20934L5.70457 11.2734Z" fill="black" stroke="black" stroke-width="1.5" /></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 1px;
+}
+
+
 
 #terms {
     font-family: 'Inter', sans-serif;
