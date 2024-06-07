@@ -133,8 +133,23 @@ header {
         opacity: 0;
     }
 }
+@media screen and (min-width: 1055px) and (max-width: 1230px) {
+    .screen-nav {
+        justify-content: flex-end;
+    }
+    
+    .hamburger-btn {
+        order: 1;
+    }
+}
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 879px) and (max-width: 1054px) {
+    .screen-nav{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 878px) {
     .nav-container, .container {
         display: none !important;
     }
