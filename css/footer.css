@@ -137,7 +137,7 @@
     -moz-appearance: none;
     width: 20px;
     height: 20px;
-    background-color: transparent; /* Default background color */
+    background-color: transparent; 
     border: 1px solid #FFF;
     border-radius: 3px;
     position: relative;
