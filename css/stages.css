@@ -64,14 +64,44 @@
 /*FOR MOBILE BELOW*/
 
 @media (max-width: 768px) {
+    .stages h3 {
+        margin-bottom: 80px;
+    }
     .stages h2{
         margin-bottom: 80px;
+    }
+
+    .frame-item-images{
+        margin-top: 0px;
+    }
+
+    .frame-item{
+        padding: 80px 16px;
+    }
+
+    .frame-item-text {
+        width: 95%;
+        text-align: left;
+        border-bottom: 1px solid #E4B271;
+    }
+
+    .rectangle-parent:last-child .frame-item-text {
+        border-bottom: none;
+    }
+
+    .frame-item-text h2{
+        margin-bottom: 16px;
+    }
+
+    .frame-item-text p{
+        margin-bottom: 64px;
     }
 
     .rectangle-parent {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        margin-top: 0px;
         margin-bottom: 0px;
     }
     
@@ -81,16 +111,7 @@
         justify-content: center;
     }
     
-    .frame-item {
-        margin-top: 20px;
-    }
-    
-    .frame-item-images {
-        margin-top: -8px;
-        margin-bottom: -8px; 
-    }
-    
     .frame-item-images img {
-        width: calc(50% - 5px); 
+        width: calc(50% - 3.39px); 
     }
 }
