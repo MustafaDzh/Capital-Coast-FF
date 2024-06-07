@@ -19,23 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-//swiper for phases
-// document.addEventListener('DOMContentLoaded', function () {
-//     var phasesContainer = document.querySelector('.phases');
-//     var mobileNavArrow = document.querySelector('.mobile-nav-arrow');
-//     var phases = document.querySelectorAll('.phase');
-//     var currentPhaseIndex = 0;
-
-//     if (phasesContainer && mobileNavArrow) {
-//         mobileNavArrow.addEventListener('click', function () {
-//             phases[currentPhaseIndex].style.display = 'none';
-//             currentPhaseIndex = (currentPhaseIndex + 1) % phases.length;
-//             phases[currentPhaseIndex].style.display = 'block';
-//         });
-//     } else {
-//         console.log('One or both elements not found.');
-//     }
-// });
+//phases-swiper
 
 document.addEventListener('DOMContentLoaded', function () {
     let swiperContainer = document.querySelector('.phases');
@@ -47,11 +31,6 @@ document.addEventListener('DOMContentLoaded', function () {
             loop: false,
             slidesPerView: 1.1,
             spaceBetween: 0,
-            breakpoints: {
-                768: {
-                    slidesPerView: 'auto',
-                }
-            },
         });
 
         mobileNavArrow.addEventListener('click', function () {

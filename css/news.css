@@ -40,7 +40,8 @@
     margin-bottom: 0;
 }
 
-/* Media Queries */
+/*FOR MOBILE BELOW*/
+
 @media (max-width: 1024px) {
     .news-new {
         width: calc(33.33% - 15px); 

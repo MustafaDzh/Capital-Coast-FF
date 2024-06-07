@@ -238,6 +238,8 @@
 @media screen and (max-width: 768px) {
     .inner-footer {
         flex-direction: column;
+        width: 100%;
+        padding: 16px;
     }
 
     .left-footer,
@@ -262,6 +264,11 @@
     .left-footer p,
     .right-footer p {
         text-align: left;
+    }
+
+    .sent{
+        width: 70%;
+        margin: 64px auto 50px;
     }
 
     .right-footer {

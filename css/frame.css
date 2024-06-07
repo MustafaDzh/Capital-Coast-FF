@@ -109,25 +109,41 @@
 }
 
 @media screen and (max-width: 768px) {
+    #frame-parent {
+        margin-top: 0;
+        padding-top: 96px
+    }
+
+    ;
+
+    .start-group h3 {
+        font-size: 18px;
+    }
+
+    .start-group p {
+        font-size: 12px;
+    }
+
     .phases {
         width: 100%;
         position: relative;
     }
 
-    .end-group{
+    .end-group {
         display: none;
     }
 
-    .arrow{
+    .arrow {
         display: flex;
+        align-items: flex-start;
     }
 
     .phases .swiper-container {
-        flex-wrap: nowrap; 
+        flex-wrap: nowrap;
     }
 
-    .swiper-wrapper{
-        flex-wrap: nowrap; 
+    .swiper-wrapper {
+        flex-wrap: nowrap;
     }
 
     .phases .swiper-wrapper {
